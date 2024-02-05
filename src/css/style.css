@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+
+#app {    
+    background-size: 200% 200%;
+    background-image: linear-gradient(43deg, #1E46A3 0%, #000 46%, #C12A23 100%);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    animation: move 5s ease-in both infinite alternate;
+}
+
+.container {
+    width: min(50rem, 90%);
+    margin: 0 auto;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.icon {
+    max-height: 10rem;
+}
+
+button img {
+    height: 1rem;
+}
+
+.response {
+    margin: 3rem 0;
+}
+
+.response > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.response img {
+    height: 30rem;
+}
+
+.response .text h2 {
+    font-size: 4rem;
+}
+
+
+.response .text p {
+    font-size: 1.5rem;
+}
+
+.response  img {
+    height: 100%;
+    max-height: 40rem;
+    min-height: 10rem;
+    width: 100%;
+    min-width: 10rem;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 0 auto;
+}
+
+
+@keyframes move {
+    0%{
+        background-position: 0 100%;
+    }
+
+    50% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@media (min-width: 40rem) {
+
+    .response > div {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    figure {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .response img {
+        width: 100%;
+        height: 80%;
+        aspect-ratio: 2/3;
+    }
+
+    .response .text {
+        padding: 0;
+        gap: 0;
+    }
+
+    .response .text p {
+        font-size: 1.2rem;
+    }
+}
