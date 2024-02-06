@@ -81,7 +81,7 @@ button {
     border-radius: .2rem;
     border: none;
     cursor: pointer;
-    margin-bottom: .4rem;
+    margin-bottom: 1rem;
 }
 
 @keyframes move {
@@ -103,22 +103,16 @@ button {
     .response > div {
         display: flex;
         flex-direction: row;
-        gap: 3rem;
     }
 
     figure {
-        width: 30rem;
+        width: 10rem;
         height: 20rem;
     }
 
     .response img {
         width: 20%;
         height: 80%;
-    }
-
-    .response .text {
-        padding: 0;
-        gap: 0;
     }
 
     .response .text p {
