@@ -7,8 +7,7 @@ export default async function searchMovie() {
     const responseMovies = await movies();
     let arrayMovies = []
 
-
-    responseMovies[0].forEach(({title, id, overview, poster_path}) => {        
+    responseMovies.forEach(({title, id, overview, poster_path}) => {        
         const movieInformation = {
             title,
             id,
@@ -18,18 +17,6 @@ export default async function searchMovie() {
 
         arrayMovies = [movieInformation, ...arrayMovies];
     })
-
-    responseMovies[1].forEach(({title, id, overview, poster_path}) => {        
-        const movieInformation = {
-            title,
-            id,
-            overview,
-            poster_path
-        }
-
-        arrayMovies = [movieInformation, ...arrayMovies];
-    })
-
 
     document.querySelector("button").addEventListener("click", () => {
         showMovie(arrayMovies)

@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    animation: move 5s ease-in both infinite alternate;
+    animation: move 5s ease-out both infinite alternate;
 }
 
 .container {
@@ -75,6 +75,15 @@ figure {
 }
 
 
+button {
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: .2rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: .4rem;
+}
+
 @keyframes move {
     0%{
         background-position: 0 100%;
@@ -103,9 +112,8 @@ figure {
     }
 
     .response img {
-        width: 100%;
+        width: 20%;
         height: 80%;
-        aspect-ratio: 2/3;
     }
 
     .response .text {

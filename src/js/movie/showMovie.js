@@ -8,10 +8,12 @@ export default function showMovie(movies) {
 
     const result = movies[randonimaze];
 
+    console.log(randonimaze)
+
     response.innerHTML = `
     <div class="card">
         <figure>
-        <img src="https://assets-prd.ignimgs.com/2021/10/15/new-batman-poster-1634314278488.jpg" alt="" class="poster">
+        <img src="./src/assets/poster.svg" alt="Hora de estudar" class="poster">
         
         </figure>
     
